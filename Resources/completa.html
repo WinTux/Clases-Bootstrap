@@ -12,14 +12,14 @@
     <title>Página con secciones</title>
 </head>
 <body>
-    <nav class="navbar navbar-expand-md navbar-light">
+    <nav class="navbar navbar-expand-md navbar-light bg-warning fixed-top">
         <div class="container-xxl">
             <a href="introduccion" class="navbar-brand">
                 <span class="fw-bold text-secondary">
                     Computadoras refurbished Pepe
                 </span>
             </a>
-            <button class="navbar-toggle" type="button"
+            <button class="navbar-toggler" type="button"
             data-bs-toggle="collapse"
             data-bs-target="#nav-principal"
             aria-controls="nav-principal"
@@ -34,6 +34,15 @@
                 </li>
                 <li class="nav-item">
                     <a href="#comentarios" class="nav-link">Mira lo que comentan de nosotros</a>
+                </li>
+                <li class="nav-item">
+                    <a href="#contacto" class="nav-link">Contáctate</a>
+                </li>
+                <li class="nav-item d-none d-md-inline ms-2">
+                    <a href="#precios" class="btn btn-secondary">Comprar</a>
+                </li>
+                <li class="nav-item d-md-none">
+                    <a href="#precios" class="nav-link">Comprar</a>
                 </li>
             </ul>
         </div>
@@ -57,6 +66,85 @@
                 </div>
                 <div class="col-md-5 text-center d-none d-md-block">
                     <img src="imagenes/comp02.jpg" alt="Laptop color negro" class="img-fluid">
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="precios" class="bg-light mt-5">
+        <div class="container-lg">
+            <div class="text-center">
+                <h2>Planes de pago</h2>
+                <p class="lead text-muted">Elija el plan que le convenga</p>
+            </div>
+            <div class="row my-5 align-items-center justify-content-center g-5">
+                <div class="col-8 col-lg-4 col-xl-3">
+                    <div class="card border-0">
+                        <div class="card-body text-center py-4">
+                            <h4 class="card-title">Económica</h4>
+                            <p class="lead card-subtitle">Con sistema GNU/Linux</p>
+                            <p class="display-5 my-4 text-success fw-bold">Bs. 800</p>
+                            <p class="card-text mx-5 text-muted d-none d-lg-block">
+                                Viene con 8GB de RAM, disco mecánico de 500GB, gráficos integrados, procesador i5 1ra generación
+                            </p>
+                            <a href="#" class="btn btn-outline-success btn-lg mt-3">Comprarlo</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-9 col-lg-4">
+                    <div class="card border-success border-2">
+                        <div class="card-header text-center text-success">Más popular</div>
+                        <div class="card-body text-center py-4">
+                            <h4 class="card-title">Estándar</h4>
+                            <p class="lead card-subtitle">Con sistema Windows 10</p>
+                            <p class="display-5 my-4 text-success fw-bold">Bs. 1800</p>
+                            <p class="card-text mx-5 text-muted d-none d-lg-block">
+                                Viene con 8GB de RAM, unidad sólida de 250GB, gráficos integrados, procesador i5 1ra generación
+                            </p>
+                            <a href="#" class="btn btn-outline-success btn-lg mt-3">Comprarlo</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-8 col-lg-4 col-xl-3">
+                    <div class="card border-0">
+                        <div class="card-body text-center py-4">
+                            <h4 class="card-title">Versión Pro</h4>
+                            <p class="lead card-subtitle">Con sistema GNU/Linux</p>
+                            <p class="display-5 my-4 text-success fw-bold">Bs. 6800</p>
+                            <p class="card-text mx-5 text-muted d-none d-lg-block">
+                                Viene con 64GB de RAM, unidad sólida de 1000GB, gráficos NVIDIA, procesador i7 9na generación
+                            </p>
+                            <a href="#" class="btn btn-outline-success btn-lg mt-3">Comprarlo</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <section id="acerca">
+        <div class="container-md">
+            <div class="text-center">
+                <h2>Especificaciones</h2>
+                <p class="lead text-muted">Las especificaciones de esta laptop</p>
+            </div>
+            <div class="row my-5 g-5 justify-content-around align-items-center">
+                <div class="col-6 col-lg-4">
+                    <img src="imagenes/comp02.jpg" alt="Una laptop HP" class="img-fluid">
+                </div>
+                <div class="col-lg-6">
+                    <div id="partes" class="accordion">
+                        <div class="accordion-item">
+                            <h2 id="heading-1" class="accordion-header">
+                                <button class="accordio-button" type="button"
+                                data-bs-toggle="collapse" data-bs-target="#parte-1"
+                                aria-expanded="true" aria-controls="parte-1">
+                            Hardware - Especificaciones de hardware</button>
+                            </h2>
+                            <div id="parte-1" class="accordion-collapse collapse show">
+                                
+                            </div>
+                        </div>
+                    </div>
                 </div>
             </div>
         </div>
