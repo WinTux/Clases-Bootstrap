@@ -201,15 +201,44 @@
             </div>
             <div class="row justify-content-center my-5">
                 <div class="col-lg-6">
-                    <form action="#">
+                    <form action="#" class="was-validated">
                         <label for="correo" class="form-label">Email:</label>
-                        <input type="email" class="form-control" id="correo" placeholder="abc@correo.com">
-                        <label for="nombre" class="form-label">Nombre:</label>
-                        <input type="text" id="nombre" class="form-control" placeholder="Ej. Pepe">
+                        <div class="input-group mb-4">
+                            <span class="input-group-text">
+                                <i class="bi bi-envelope-fill"></i>
+                            </span>
+                            <input type="email" class="form-control" id="correo" placeholder="abc@correo.com">
+                        </div>
+                        <div class="my-3">
+                            <label for="nombre" class="form-label">Nombre:</label>
+                            <div class="input-group mb-4">
+                                <span class="input-group-text">
+                                    <i class="bi bi-person-fill"></i>
+                                </span>
+                                <input type="text" id="nombre" class="form-control" placeholder="Ej. Pepe" required>
+                            </div>
+                            <div class="valid-feedback">Es válido</div>
+                            <div class="invalid-feedback">Este campo es obligatorio</div>
+                        </div>
                         <label for="asunto" class="form-label">¿Cuál es su duda?</label>
-                        <select name="as" id="asunto" class="form-select">
-                            
-                        </select>
+                        <div class="input-group mb-4">
+                            <span class="input-group-text">
+                                <i class="bi bi-chat-right-dots-fill"></i>
+                            </span>
+                            <select name="as" id="asunto" class="form-select">
+                                <option value="desc">Sobre la descripción</option>
+                                <option value="prec" selected>Sobre los precios</option>
+                                <option value="recl">Sobre un reclamo</option>
+                                <option value="otro">Otra consulta</option>
+                            </select>
+                        </div>
+                        <div class="form-floating my-4 bt-5">
+                            <textarea name="consulta" id="consulta" style="height: 140px;" class="form-control"></textarea>
+                            <label for="consulta">Tu consulta...</label>
+                        </div>
+                        <div class="text-center mb-4">
+                            <button class="btn btn-success" type="submit">Enviar</button>
+                        </div>
                     </form>
                 </div>
             </div>
@@ -277,6 +306,33 @@
             </div>
         </div>
     </section>
+    <section id="pie" class="bg-light">
+        <div class="container">
+            <div class="text-center">
+                <h2>Mantente actualizado</h2>
+                <p class="lead">Siscríbete para que te enteres de ofertas y promociones</p>
+            </div>
+            <div class="row justify-content-center">
+                <div class="col-md-8 text-center">
+                    <p class="text-muted my-4">Lorem ipsum dolor sit amet consectetur adipisicing elit. Nesciunt tempora rerum earum aperiam, laudantium veniam?</p>
+                    <button class="btn btn-warning"
+                    data-bs-toggle="modal" data-bs-target="#modal-suscripcion">Suscribirse</button>
+                </div>
+            </div>
+        </div>
+    </section>
+    <div id="modal-suscripcion" class="modal fade" tabindex="-1"
+    aria-labelledby="modal-titulo" aria-hidden="true">
+        <div class="modal-dialog">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 id="modal-titulo" class="modal-title">Suscríbete a nuestro boletín informativo</h5>
+                    <button type="button" class="btn-close"
+                    data-bs-dismiss="modal" aria-label="Cerrar"></button>
+                </div>
+            </div>
+        </div>
+    </div>
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/js/bootstrap.bundle.min.js" integrity="sha384-HwwvtgBNo3bZJJLYd8oVXjrBZt8cqVSpeBNS5n7C8IVInixGAoxmnlMuBnhbgrkm" crossorigin="anonymous"></script>
 </body>
 </html>
