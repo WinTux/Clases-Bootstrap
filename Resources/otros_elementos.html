@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="/Resources/estilos/principal.min.css">
+    <title>Otros elementos</title>
+</head>
+<body>
+     <!-- carousel -->
+    <div id="ejemplocarrusel" class="carousel slide">
+        <div class="carousel-indicators">
+            <button class="active" type="button" 
+            data-bs-target="contenido" data-bs-slide-to="0"
+            aria-current="true" aria-label="Elem1"
+            ></button>
+            <buttontype="button" 
+            data-bs-target="contenido" data-bs-slide-to="1"
+             aria-label="Elem2"
+            ></button>
+            <button  type="button" 
+            data-bs-target="contenido" data-bs-slide-to="2"
+             aria-label="Elem3"
+            ></button>
+        </div>
+    </div>
+
+      <!-- tab -->
+    <div class="container my-5">
+        <nav>
+            <div id="mi_tab_nav" class="nav nav-tabs" role="tablist">
+                <button id="mi-tab-nav-inicio" class="nav-link active"
+                data-bs-toggle="tab" data-bs-target="#nav-inicio"
+                type="button" role="tab" aria-controls="nav-inicio"
+                aria-selected="true">Inicio</button>
+                <button id="mi-tab-nav-producto" class="nav-link "
+                data-bs-toggle="tab" data-bs-target="#nav-producto"
+                type="button" role="tab" aria-controls="nav-producto"
+                aria-selected="false">Productos</button>
+                <button id="mi-tab-nav-ofertas" class="nav-link "
+                data-bs-toggle="tab" data-bs-target="#nav-ofertas"
+                type="button" role="tab" aria-controls="nav-ofertas"
+                aria-selected="false">Ofertas</button>
+            </div>
+        </nav>
+        <div id="mi-tab-contenido" class="tab-content">
+            <div id="nav-inicio" class="tab-pane fade show active p-3"
+            role="tabpanel" aria-labelledby="mi-tab-nav-inicio">
+                <h2>INICIO</h2>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Iste, libero. Dolorum assumenda quisquam magnam asperiores.</p>
+                <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Voluptate nam ipsum perferendis. Alias quia laudantium magni quibusdam ipsa repellat velit iure reiciendis voluptatibus, tempora quo, minus repudiandae placeat!</p>
+            </div>
+            <div id="nav-producto" class="tab-pane fade p-3"
+            role="tabpanel" aria-labelledby="mi-tab-nav-producto">
+                <h2>PRODUCTOS</h2>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Iste, libero. Dolorum assumenda quisquam magnam asperiores.</p>
+                <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Voluptate nam ipsum perferendis. Alias quia laudantium magni quibusdam ipsa repellat velit iure reiciendis voluptatibus, tempora quo, minus repudiandae placeat!</p>
+            </div>
+            <div id="nav-ofertas" class="tab-pane fade p-3"
+            role="tabpanel" aria-labelledby="mi-tab-nav-ofertas">
+                <h2>OFERTAS</h2>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Iste, libero. Dolorum assumenda quisquam magnam asperiores.</p>
+                <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Voluptate nam ipsum perferendis. Alias quia laudantium magni quibusdam ipsa repellat velit iure reiciendis voluptatibus, tempora quo, minus repudiandae placeat!</p>
+            </div>
+        </div>
+    </div>
+
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/js/bootstrap.bundle.min.js" integrity="sha384-HwwvtgBNo3bZJJLYd8oVXjrBZt8cqVSpeBNS5n7C8IVInixGAoxmnlMuBnhbgrkm" crossorigin="anonymous"></script>
+</body>
+</html>

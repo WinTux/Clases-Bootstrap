@@ -2,4 +2,15 @@ $secondary: #c99494;
 $warning: #f9b59c;
 $success: #13555c;
 $light: #fce5cd;
+
+@import "../node_modules/bootstrap/scss/_functions";
+@import "../node_modules/bootstrap/scss/_variables";
+$expansion-theme-colors: (
+    "secondarylight": #d5b3b3,
+    "secondarydark": #a17373,
+    "amarillofondo": #f4e988,
+    "colorestrella": #da961f
+);
+$theme-colors: map-merge($expansion-theme-colors, $theme-colors);
+
 @import '../node_modules/bootstrap/scss/bootstrap';
