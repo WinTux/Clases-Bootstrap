@@ -8,21 +8,55 @@
 </head>
 <body>
      <!-- carousel -->
-    <div id="ejemplocarrusel" class="carousel slide">
+    <div id="ejemplocarrusel" class="carousel slide" data-bs-touch="false"
+    data-bs-ride="carousel">
         <div class="carousel-indicators">
             <button class="active" type="button" 
-            data-bs-target="contenido" data-bs-slide-to="0"
+            data-bs-target="#ejemplocarrusel" data-bs-slide-to="0"
             aria-current="true" aria-label="Elem1"
             ></button>
-            <buttontype="button" 
-            data-bs-target="contenido" data-bs-slide-to="1"
+            <button type="button" 
+            data-bs-target="#ejemplocarrusel" data-bs-slide-to="1"
              aria-label="Elem2"
             ></button>
             <button  type="button" 
-            data-bs-target="contenido" data-bs-slide-to="2"
+            data-bs-target="#ejemplocarrusel" data-bs-slide-to="2"
              aria-label="Elem3"
             ></button>
         </div>
+        <div class="carousel-inner">
+            <div class="carousel-item active" data-bs-interval="5000">
+                <img class="d-block w-100" src="/Resources/imagenes/uno.jpeg" alt="1 mapache">
+                <div class="carousel-caption d-md-block d-none">
+                    <h5>Un slide inicial</h5>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Nobis optio ullam maiores ducimus, laborum rem.</p>
+                </div>
+            </div>
+            <div class="carousel-item " data-bs-interval="3000">
+                <img class="d-block w-100" src="/Resources/imagenes/comp03.jpeg" alt="Laptop 2">
+                <div class="carousel-caption d-md-block d-none">
+                    <h5>Segundo slide</h5>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Nobis optio ullam maiores ducimus, laborum rem.</p>
+                </div>
+            </div>
+            <div class="carousel-item " data-bs-interval="1000">
+                <img class="d-block w-100" src="/Resources/imagenes/comp02.jpg" alt="Laptop 1">
+                <div class="carousel-caption d-md-block d-none">
+                    <h5>Último slide</h5>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Nobis optio ullam maiores ducimus, laborum rem.</p>
+                </div>
+            </div>
+        </div>
+        <button class="carousel-control-prev" type="button" data-bs-target="#ejemplocarrusel"
+        data-bs-slide="prev">
+            <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+            <span class="visually-hidden">Anterior</span>
+        </button>
+        <button class="carousel-control-next" type="button" data-bs-target="#ejemplocarrusel"
+        data-bs-slide="next">
+            <span class="carousel-control-next-icon" aria-hidden="true"></span>
+            <span class="visually-hidden">Siguiente</span>
+        </button>
     </div>
 
       <!-- tab -->
